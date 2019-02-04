@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Donacija Krvi</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="baner">
+
+                    
+
+                  <a href="Pocetna.aspx"/><img src="/Slike/Baner.jpeg" alt="Donacija krvi" id="BanerSlika"/>
+                        
+
+
+ 
+
+                        
+            </div>
+                        <div id="Menu">
+                            
+
+                <ul id="Meni">
+					<li>
+						<a href="Pocetna.aspx">Početna</a>
+					</li>
+					<li>
+						<a href="Onama.aspx">O nama</a>
+					</li>
+                    <li>
+						<a href="Kontakt.aspx">Kontakt</a>
+					</li>
+                    <li>
+						<a href="">Donacija</a>
+					</li>
+                    <li>
+						<a href="Login.aspx">Login</a>
+					</li>
+                    </ul>
+                    </div>
+
+        <div id="Content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        
+        </asp:ContentPlaceHolder>
+            </div>
+   
+        
+        <div id="Footer"> Donacija krvi Copyright @2018</div>
+    </form>
+</body>
+</html>
